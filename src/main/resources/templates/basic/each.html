@@ -19,9 +19,9 @@
       <td th:text="${member.name}">이름</td>
       <td th:text="${member.age}">0</td>
     </tr>
-    
+
   </table>
-  
+
   <!-- 선택변수 사용 -->
   <table border="1">
     <tr>
@@ -50,20 +50,18 @@
       <td th:text="${loopStat.count}">번호</td>
       <td th:text="${member.name}">이름</td>
       <td th:text="${member.age}">0</td>
-      <td><span th:text="${loopStat.index}"></span> <span
-        th:text="${loopStat.size}"></span> <span
-        th:text="${loopStat.even}"></span> <span
+      <td><span th:text="${loopStat.index}"></span> 
+      <span th:text="${loopStat.size}"></span> 
+      <span th:text="${loopStat.even}"></span> <span
         th:text="${loopStat.odd}"></span> <span
         th:text="${loopStat.first}"></span> <span
         th:text="${loopStat.last}"></span> <span
         th:text="${loopStat.current}"></span></td>
     </tr>
   </table>
-  
-  <span th:each="i : ${#numbers.sequence(1, 10)}">
-    [[${i}]]
-  </span>
-   
+
+  <span th:each="i : ${#numbers.sequence(1, 10)}"> [[${i}]] </span>
+
 </body>
 </html>
 
